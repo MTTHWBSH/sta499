@@ -101,7 +101,7 @@ textarea {
 
 a	{
 	text-decoration: none;
-	color: #B8D30B;
+	color: #ebed53;
 	opacity: .7;
 	transition: .5s;
 	-moz-transition: .5s;
@@ -117,28 +117,6 @@ a:hover	{
 	float: right;
 	clear: both;
 }   
-
-header	{
-	background: black;
-	border-bottom: 4px solid #B8D30B;
-	height: 50px;
-	min-width: 100%;
-	top: 0;
-	position: fixed;
-	z-index: 10;
-}
-
-header a	{
-	padding: 12px 20px 0px 0px;
-}
-
-header a .icon-twitter:hover, .icon-linkedin:hover, .icon-github-alt:hover	{
-	-webkit-transform: translateY(-1px);
-	-moz-transform: translateY(-1px);
-	-ms-transform: translateY(-1px);
-	-o-transform: translateY(-1px);
-	transform: translateY(-1px);
-}
 
 /* nav styles */
 
@@ -156,11 +134,11 @@ nav ul li 	{
 	margin: 0px 0px 10px 0px;
 	padding: 10px 0px;
 	width: 215px;
-	background: black;
+	text-align: right;
 }
 
 nav ul li a  {
-	color: #f8f8f8;
+	color: black;
 	size: 1.5em;
 	font-weight: 700;
 	text-decoration: none;
@@ -178,20 +156,31 @@ nav ul li a span	{
 }
 
 nav ul li:hover  {
-	width: 250px;
-	transition: width 1s;
-	-moz-transition: width 1s;
-	-webkit-transition: width 1s;
-	-o-transition: width 1s;
+	transform:scale3d(1.15,1.15,1.15);
+	-ms-transform:scale3d(1.15,1.15,1.15); /* IE 9 */
+	-moz-transform:scale3d(1.15,1.15,1.15); /* Firefox */
+	-webkit-transform:scale3d(1.15,1.15,1.15); /* Safari and Chrome */
+	-o-transform:scale3d(1.15,1.15,1.15); /* Opera */
 }
 
-nav ul li a:hover	{
-	color: #B8D30B;
+nav ul li a.social:hover	{
+	color: #EBED53;
+}
+
+nav ul li a.people:hover	{
+	color: #60A142;
+}
+
+nav ul li a.spartan-pride:hover	{
+	color: #EE993E;
+}
+
+nav ul li a.bucket-list:hover	{
+	color: #872e2e;
 }
 
 nav ul li a:hover:after	{	
 	content: ">";
-	padding-right: 15px;
 	float: right;
 }
 
@@ -213,19 +202,13 @@ section	{
 }
 
 .box {
-	color: #212121;
-	padding: 15px;
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
 	width: auto;
 	height: auto;
 	background: #ffffff;
-	border: 2px solid #787878;
 	margin-bottom: 20px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 }
 
 #back-top  { 
@@ -239,6 +222,37 @@ section	{
 	text-decoration:none; 
 	margin: 0;
 }
+
+h3	{
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+	color: black;
+}
+
+.social h3	{
+	background: #ebed53;
+	content: "SOCIAL";
+}
+
+.spartan-pride h3	{
+	background: #ee993e;
+	content: "SOCIAL";
+}
+
+.people h3	{
+	background: #60a142;
+}
+
+.bucket-list h3	{
+	background: #872e2e;
+}
+
+i.icon-circle-arrow-up	{
+	color: #ebed53;
+}
+
+
 
 /* footer styles */
 
