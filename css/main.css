@@ -316,6 +316,10 @@ footer	{
  * Image replacement
  */
 
+.hide	{
+	display: none;
+}
+
 .ir {
     background-color: transparent;
     border: 0;

@@ -41,6 +41,19 @@ $(document).ready(function(){
 
 $(document).ready(function () {
     $(".fancybox").fancybox({
-        type: "image"
-    });
+        type: "image",
+ helpers : {
+  title : {
+   type : 'inside'
+  },
+  buttons : {},
+  thumbs : {
+   width : 50,
+   height : 50
+  }
+ },
+ afterLoad : function() {
+  this.title = '' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+ }
+  });
 });
