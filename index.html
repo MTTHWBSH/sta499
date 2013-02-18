@@ -15,6 +15,18 @@
         <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <script type="text/javascript">
+jQuery(document).ready(function($){
+	/* prepend menu icon */
+	$('nav').prepend('<div id="menu-icon">Menu <i class="icon-reorder"></i></div>');
+	/* toggle nav */
+  $("#menu-icon").on("click", function(){
+    $(".nav").slideToggle();
+	  $(this).toggleClass("active");
+		$("#menu-icon img").toggleClass("rotate");
+  });
+});
+</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,7 +34,7 @@
             www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
         <nav id="nav">
-			<ul>
+			<ul class="nav">
 				<li><a class="all" href="" data-filter="*">All</a></li>
 				<li><a class="social" href="" data-filter=".social">SOCIAL</a></li>
 				<li><a class="bucket-list" href="" data-filter=".bucket-list">BUCKET LIST</a></li>
@@ -43,11 +55,10 @@
 			</div>
 			
 			<div class="box social">
-			<a href="http://placehold.it/1200x700" rel="gallery2" class="fancybox"><img src="http://placehold.it/250x250" alt="" /></a> 
-				<a href="http://placehold.it/1200x800" rel="gallery2" class="fancybox hide"></a> 
-				<a href="http://placehold.it/1200x900" rel="gallery2" class="fancybox hide"></a> 
-				<a href="http://placehold.it/1200x700" rel="gallery2" class="fancybox hide"></a>  
-			<h3></h3>	
+			<a href="assetts/img/dublin_feature.png" rel="gallery2" title ="1/2 OFF WEDNESDAY AT DUBLIN SQUARE Every Wednesday from 6 p.m. to close, Dublin offers just about 
+			everything for half price. This includes the lunch/dinner menu, all wines, calls and drafts." class="fancybox"><img src="assetts/img/dublin_thumbnail.png" alt="" /
+			></a> 
+			<h3><!-- Half Off Wednesdays At Dublin --></h3>	
 			</div>	
 				
 			<div class="box people">
