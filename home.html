@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Beyond the Banks</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/normalize.css">
@@ -14,51 +14,18 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/font-awesome.css">
         
-        <!-- Includes for Video.js -->
-        <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-        <script src="http://vjs.zencdn.net/c/video.js"></script>
-        
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        
+        <!-- BigVideo Dependencies -->
+        <script src="http://vjs.zencdn.net/c/video.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+	    <script src="js/jquery.imagesloaded.min.js"></script>
+	
+	    <!-- BigVideo -->
+	    <script src="js/bigvideo.js"></script>
+	    <link rel="stylesheet" href="css/bigvideo.css">
                
-        <!-- Borrowed Pitchfork Function -->
-        <script type="text/javascript" src="http://www.pitchforkmusicfestival.com/zineutil.min.js"></script>
-        <script type="text/javascript">
-	        function pmf13() {
-			    // var backdrop_content_el = document.getElementById('backdrop-content');
-			    // var backdrop_content_autoscale = znu.scale.autoscale(backdrop_content_el, 'cover');
-			    var backdrop_center = document.getElementById('backdrop-center');
-			    var reflow = function() {
-			        var size = znu.scale.cover(1280, 720, window.innerWidth, window.innerHeight);
-			
-			        backdrop_center.style.width = size.width + 'px';
-			        backdrop_center.style.height = size.height + 'px';
-			      //  backdrop_center.style.marginLeft = -(size.width / 2) + 'px';
-			      // backdrop_center.style.marginTop = -(size.height / 2) + 'px';
-			    };
-			    window.onresize = reflow;
-			    if (window.addEventListener) {
-			        window.addEventListener('orientationchange', reflow, false);
-			    }
-			    reflow();
-			
-/*
-			    var art_content_el = document.getElementById('art-content');
-			    var art_content_autoscale = znu.scale.autoscale(art_content_el, 'fit');
-			
-			    var body_normalize = znu.type.normalize_box(document.body, 32, 32);
-			
-			    var cursor = 0;
-			    var artists = document.getElementsByClassName('artist');
-			    setInterval(function() {
-			        for (var i = 0; i < artists.length; i++)
-			            artists[i].setAttribute('class', 'artist');
-			        artists[cursor].setAttribute('class', 'artist active');
-			        cursor = (cursor + 1) % artists.length;
-			    }, 2000);
-*/
-			}
-		</script>
     </head>
     <body>
     	<!-- IE7 warning -->
@@ -67,43 +34,18 @@
             www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
         
-        <!-- Background video -->        
-        <div id="backdrop">
-            <div id="backdrop-content"
-                 data-width="1280"
-                 data-height="720">
-                <div id="backdrop-center">
-                    <!--<img src="assets/homepage/blue_bg.jpg" /> -->
-<!--
-			        <video id="backdrop-video" class="video-js vjs-default-skin" width="100%" height="100%" autoplay="autoplay" loop="loop" tabindex="0">
-				        <source src="assets/homepage/blue_bg_loop.mp4" type="video/mp4">
-				        <source src="assets/homepage/blue_bg_loop.webm" type="video/webm">
-				        <source src="backdrop.ogv" type="video/ogg">
-			        </video>
--->
-                    <script type="text/javascript">
-                        if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android/)) {
-                            document.write('<video id="backdrop-video" class="video-js vjs-default-skin"');
-                            document.write('width="100%" height="100%"');
-                            document.write('autoplay="autoplay" loop="loop" tabindex="0">');
-                            document.write('<source src="assets/homepage/blue_bg_loop.mp4" type="video/mp4" />');
-                            document.write('<source src="assets/homepage/blue_bg_loop.webm" type="video/webm" />');
-                            // document.write('<source src="backdrop.ogv" type="video/ogg" />');
-                            document.write('</video>');
-                        }
-                    </script>
-                </div>
-            </div>
-        </div>
-        
-        <script type="text/javascript">
-            if ($.browser.msie && parseInt($.browser.version) < 9) {
-                $('img.svg').each(function() {
-                    $(this).attr('src', $(this).data('png'));
-                });
-            }
-
-            pmf13();
-        </script>
+        <!-- Background Video -->    
+        <script>
+		    $(function() {
+	            var BV = new $.BigVideo({useFlashForFirefox:false});
+				BV.init();
+				
+				if (Modernizr.touch) {
+					BV.show('assets/homepage/blue_bg.jpg');
+				} else {
+					BV.show('assets/homepage/blue_bg_loop.mp4', {altSource:'assets/homepage/blue_bg_loop.webm',ambient:true});
+				}
+		    });
+	    </script>        
     </body>
 </html>
