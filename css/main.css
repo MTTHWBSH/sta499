@@ -91,7 +91,7 @@ textarea {
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #323133;
     padding: 0.2em 0;
 }
 
@@ -101,7 +101,7 @@ textarea {
 
 a	{
 	text-decoration: none;
-	color: #ebed53;
+	color: #FFED53;
 	opacity: .7;
 	transition: .5s;
 	-moz-transition: .5s;
@@ -131,18 +131,22 @@ nav	{
 }
 
 nav ul li 	{
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 10px 30px;
 	padding: 10px 0px;
-	width: 215px;
-	text-align: right;
+	width: 220px;
+}
+
+nav ul li:first-child	{
+	padding-left: 55px;
+	width: 190px;
 }
 
 nav ul li a  {
-	color: black;
+	color: #323133;
 	size: 1.5em;
 	font-weight: 700;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 10px 20px 10px 0px;
 	transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
@@ -151,32 +155,28 @@ nav ul li a  {
 	opacity: 1.0;
 }
 
+nav ul li a img	{
+	padding-right: 20px
+}
+
 nav ul li a span	{
 	padding-left: 10px;
 }
 
-nav ul li:hover  {
-	transform:scale3d(1.15,1.15,1.15);
-	-ms-transform:scale3d(1.15,1.15,1.15); /* IE 9 */
-	-moz-transform:scale3d(1.15,1.15,1.15); /* Firefox */
-	-webkit-transform:scale3d(1.15,1.15,1.15); /* Safari and Chrome */
-	-o-transform:scale3d(1.15,1.15,1.15); /* Opera */
-}
-
 nav ul li a.social:hover	{
-	color: #EBED53;
-}
-
-nav ul li a.people:hover	{
-	color: #60A142;
-}
-
-nav ul li a.spartan-pride:hover	{
 	color: #EE993E;
 }
 
+nav ul li a.people:hover	{
+	color: #323133;
+}
+
+nav ul li a.spartan-pride:hover	{
+	color: #993434;
+}
+
 nav ul li a.bucket-list:hover	{
-	color: #872e2e;
+	color: #2F8C49;
 }
 
 nav ul li a:hover:after	{	
@@ -192,7 +192,7 @@ nav ul li a:hover:after	{
 
 #content	{
 	width: 900px;
-	margin: 130px 0px 0px 300px;
+	margin: 100px 0px 0px 290px;
 	clear: both;
 }
 
@@ -219,7 +219,7 @@ section	{
 	position: fixed;
 	right: 25px;
 	bottom: 0;
-	color: #60A142;
+	color: #2F8C49;
 	font-weight: bold;
 	font-size: 3.0em;
 	text-decoration: none;
@@ -235,30 +235,30 @@ h3	{
 	margin: 0;
 	padding: 15px;
 	text-align: center;
-	color: black;
+	color: #323133;
 	max-width: 220px;
 }
 
 .social h3	{
-	background: #ebed53;
+	background: #EE993E;
 	content: "SOCIAL";
 }
 
 .spartan-pride h3	{
-	background: #ee993e;
+	background: #993434;
 	content: "SOCIAL";
 }
 
 .people h3	{
-	background: #60a142;
+	background: #323133;
 }
 
 .bucket-list h3	{
-	background: #872e2e;
+	background: #2F8C49;
 }
 
 i.icon-circle-arrow-up	{
-	color: #60A142;
+	color: #2F8C49;
 }
 
 /* image hovers */
@@ -461,33 +461,34 @@ footer	{
 	}
 	
 	#menu-button	{
-		background-color: #000;
+		background-color: #323133;
 		padding: 5px 10px 5px 40px;
 	}
 	
 	nav ul.nav	{
-		width: 100%;
+		max-width: 230px;
+		margin-left: 40px;
 		display: none;
+	    border: 3px solid #323133;
+		border-radius: 0px 0px 5px 5px;
+		border-top:none;
+		background-color: #f8f8f8;
 	}
-	
+	nav ul li:first-child {
+		padding-left: 55px;
+		width: auto;
+		border-top: none;
+	}
 	nav ul li	{
 		text-align: left;
 		width: auto;
-		margin-top: 4px;
 		margin-bottom: 0;
-		background-color: #000;
-		padding-left: 20px;
+		padding: 15px;
+		margin-left: 0;
+		border-top: 1px dashed #323133;
 	}
 	nav ul li a	{
-		color: #F8F8F8;
-	}
-	nav ul li:hover	{
-		color: #F8F8F8;
-		transform:none;
-		-ms-transform:none;
-		-moz-transform:none;
-		-webkit-transform:none;
-		-o-transform:none;
+		color: #323133;
 	}
 	nav ul li a:hover:after	{	
 	content: none;
@@ -499,7 +500,7 @@ footer	{
 	}
 	.icon-reorder:hover	{
 		cursor: pointer;
-		color: #60A142;
+		color: #2F8C49;
 	}
 }
 
@@ -511,7 +512,7 @@ footer	{
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #323133 !important; /* #323133 prints faster: h5bp.com/s */
         box-shadow:none !important;
         text-shadow: none !important;
     }
