@@ -136,11 +136,6 @@ nav ul li 	{
 	width: 220px;
 }
 
-nav ul li:first-child	{
-	padding-left: 55px;
-	width: 190px;
-}
-
 nav ul li a  {
 	color: #323133;
 	size: 1.5em;
