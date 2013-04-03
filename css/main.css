@@ -342,6 +342,11 @@ footer	{
           transition-property:         transform, opacity;
 }
 
+/* White BG for fancybox thumbnails. */
+#fancybox-thumbs ul li img {
+	background-color: #f8f8f8;
+}
+
 
 /* ==========================================================================
    Helper classes
