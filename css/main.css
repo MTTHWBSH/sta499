@@ -182,7 +182,6 @@ nav ul li a.bucket-list:hover	{
 nav ul li a:hover:after	{	
 	content: ">";
 	float: right;
-	line-height: 30px;
 }
 
 #menu-button	{
