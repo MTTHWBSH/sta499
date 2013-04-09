@@ -509,8 +509,6 @@ footer	{
 		background-color: #f8f8f8;
 	}
 	nav ul li:first-child {
-		padding-left: 55px;
-		width: auto;
 		border-top: none;
 	}
 	nav ul li	{
