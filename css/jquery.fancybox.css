@@ -249,7 +249,7 @@
 }
 
 #fancybox-thumbs {
-	position: fixed;
+	position: relative; /* Changed for moving thumbs to wrapper. */
 	left: 0;
 	width: 100%;
 	overflow: hidden;
