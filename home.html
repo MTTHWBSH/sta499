@@ -12,47 +12,338 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.css">
-        
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+        <script src="js/vendor/jquery-1.8.0.min.js"></script>
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
-        
-        <!-- BigVideo Dependencies -->
-        <script src="http://vjs.zencdn.net/c/video.js"></script>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
-	    <script src="js/jquery.imagesloaded.min.js"></script>
-	
-	    <!-- BigVideo -->
-	    <script src="js/bigvideo.js"></script>
-	    <link rel="stylesheet" href="css/bigvideo.css">
-	    
-        <!-- Background Video -->    
-        <script>
-		    $(function() {
-	            var BV = new $.BigVideo({useFlashForFirefox:false});
-				BV.init();
-				
-				if (Modernizr.touch) {
-					BV.show('assets/homepage/blue_bg.jpg');
-				} else {
-					BV.show('assets/homepage/blue_bg_loop.mp4', {altSource:'assets/homepage/blue_bg_loop.webm',ambient:true});
-				}
-		    });
-	    </script>
-               
     </head>
     <body>
-    	<!-- IE7 warning -->
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://	
             www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-        
-    
-    <div id="home">
-    	<img src="assets/logo-circle-white.png" />
-    	<h1>Beyond the Banks</h1>
-    	<p>On the banks of the Red Cedar, there's a school that's known to all. We're taking you beyond the banks and giving you a dose of MSU from a students perspective.</p>
-    	<a href="index.html">Enter</a>
-    </div>
+        <nav id="nav-wrap">
+			<ul class="nav" id="nav">
+				<li><a class="all" href="" data-filter="*"><img src="assets/icon-home.png" />VIEW ALL</a></li>
+				<li><a class="social" href="" data-filter=".social"><img src="assets/icon-01.png" />SOCIAL</a></li>
+				<li><a class="bucket-list" href="" data-filter=".bucket-list"><img src="assets/icon-03.png" />BUCKET LIST</a></li>
+				<li><a class="spartan-pride" href="" data-filter=".spartan-pride"><img src="assets/icon-04.png" />SPARTAN PRIDE</a></li>
+				<li><a class="people" href="" data-filter=".people"><img src="assets/icon-02.png" />PEOPLE</a></li>
+			</ul>
+		</nav>
+		
+		<div id="content">
+			
+			<div class="box spartan-pride">
+				<a class="fancybox fancybox" rel="gallery" title="Magic Johnson" href="assets/img/magicjohnson/mj.png"><img src="assets/img/magicjohnson/thumbnail.png" alt="" 
+				/>
+				<h3>Magic Johnson</h3></a>
+					<a href="assets/img/magicjohnson/mjcomic.png" rel="gallery" class="fancybox hide"></a> 
+					<a href="assets/img/placeholder.png" rel="gallery" title="Ervin &#34;Magic&#34; Johnson
+Age: 53
+Height: 6'9
+Weight: 220 lbs" class="fancybox hide"></a> 
+
+<a href="assets/img/placeholder.png" rel="gallery" title="College
+Team: Michigan State University 
+Seasons Played: 2 (1977-79)
+Age: 18-19
+Jersey Number: 33
+Average Stats per Game:
+•	17.05 points
+•	7.6 rebounds
+•	7.9 assists
+Notable Achievements: 
+•	NCAA Champion 1979
+•	Voted &#34;Most Outstanding Player of the Final Four&#34;" class="fancybox hide"></a> 
+<a href="assets/img/placeholder.png" rel="gallery" title="Professional Drafted: 1979 first pick
+Team: Los Angeles Lakers
+Seasons Played: 13 (1979-96; break '91-95)
+Age: 18-36
+Jersey Number: 32
+Career Totals:
+•	17,707 points
+•	6,559 rebounds
+•	10,141 assists
+Notable Achievements:
+•	5 x NBA Champion ('80, '82, '85, '87-88)
+•	3 x  NBA Finals MVP ('80, '82, '87)
+•	3 x NBA Most Valuable Player ('87, '89-90)
+•	12 x NBA All-Star Game ('80, '82-92)
+•	2 x NBA  All-Star Game MVP ('90, '92)
+•	1992 Olympic Gold Medal with the &#34;Dream Team&#34;" class="fancybox hide"></a> 
+
+			</div>							
+				
+			<div class="box spartan-pride">	
+				<a class="fancybox fancybox" rel="gallery1" title="Beaumont Tower" href="assets/img/beaumonttower/beaumont_Page_1.png"><img src="assets/img/beaumonttower/Beaumont_Thumb.png" alt="" />
+				<h3>Beaumont Tower</h3>
+				</a>
+					<a href="assets/img/beaumonttower/beaumont_Page_2.png" rel="gallery1" class="fancybox hide"></a> 
+					<a href="assets/img/beaumonttower/beaumont_Page_3.png" rel="gallery1" class="fancybox hide"></a> 
+					<a href="assets/img/beaumonttower/beaumont_Page_4.png" rel="gallery1" class="fancybox hide"></a> 	
+			</div>
+			
+			<div class="box social">
+			<a href="assets/img/dublin/dublin_feature.png" rel="gallery2" title ="1/2 OFF WEDNESDAY AT DUBLIN SQUARE Every Wednesday from 6 p.m. to close, Dublin offers just about 
+			everything for half price. This includes the lunch/dinner menu, all wines, calls and drafts." class="fancybox"><img src="assets/img/dublin/dublin_thumbnail.png" alt="" />
+			<h3>Half Off Wednesdays At Dublin</h3>
+			</a> 	
+			</div>	
+				
+			<div class="box people">
+			<a href="assets/img/elibroad/eli.png" rel="gallery3" title="Eli Broad" class="fancybox"><img src="assets/img/elibroad/thumbnail.png" alt="" />
+			<h3> Eli Broad </h3>
+			</a> 
+				<a href="assets/img/elibroad/layout.jpg" rel="gallery3" class="fancybox hide"></a> 
+				<a href="assets/img/elibroad/art.png" rel="gallery3" class="fancybox hide"></a> 
+				<a href="assets/img/elibroad/education.png" rel="gallery3" class="fancybox hide"></a>  
+                <a href="assets/img/elibroad/science.png" rel="gallery3" class="fancybox hide"></a>  
+                <a href="assets/img/elibroad/infographic.png" rel="gallery3" class="fancybox hide"></a>  	
+			</div>
+			
+			<div class="box spartan-pride">
+			<a href="assets/img/olinfoodbank/img2.jpg" rel="gallery4" class="fancybox"><img src="assets/img/olinfoodbank/olinfood_thumb.jpg" alt="" /><h3>Student Food Bank</h3></a> 
+				<a href="assets/img/olinfoodbank/img1.jpg" rel="gallery4" title= "Volunteers 
+From 5:30 p.m. to 7:30 p.m. on each distribution evening, 10 to 15 student volunteers are needed to help package food, stock shelves, and generally serve our clients. If you are interested in volunteering, please contact us at foodbank@msu.edu. All volunteers must be 18 or older." class="fancybox hide"></a> 
+				<a href="assets/img/olinfoodbank/soup_cans.jpg" rel="gallery4" title="MSU undergraduate and graduate students who do not have an on-campus meal plan are eligible to use the food bank. The MSU Student Food Bank is open bi-weekly on Wednesdays, from 5:30 p.m.– 7:30 p.m. in the Olin Health Center Dining Room (West Entrance).
+For more information: https://www.msu.edu/~foodbank/" class="fancybox hide"></a> 	
+			</div>
+			
+			<div class="box social">
+			<a href="assets/img/Munninfo_feature.png" rel="gallery5" title ="Everything that you need to know about leisure skating at MSU's Munn Ice Arena at a glance." class="fancybox"><img src="assets/img/Munninfo_thumb.png" alt="" /><h3>Munn Ice Arena Info</h3></a> 	
+			</div>
+			
+			<div class="box bucket-list">
+			<a href="assets/img/barcrawl/barcrawl.jpg" rel="gallery6" class="fancybox"><img src="assets/img/barcrawl/barcrawl_thumbnail.jpg" alt="" /><h3>Bar Crawl</h3></a> 
+				<a href="assets/img/barcrawl/barcrawl2.jpg" rel="gallery6" class="fancybox hide"></a> 
+				<a href="assets/img/placeholder.png" rel="gallery6"
+                title="Bar Crawls are usually put together by groups or organizations to celebrate the completion of an event, or used as a get together for friends to reunite and have fun. This bar crawl was for students in the Summer Sports Study Abroad Program in Sydney, Australia during the summer of 2012. Many of the participants hadn't seen each other since the study abroad program so a bar crawl was the perfect event for everyone to reunite and re-live some of their summer memories abroad. " class="fancybox hide"></a> 
+				<a href="assets/img/placeholder.png" rel="gallery6" title="Most bar crawls have T-shirts made to distinguish them apart from the regular bar crowd. This bar crawls shirts read, &#34;NO WORRIES BAR CRAWL 2012&#34; on the front, and &#34;WE GO DOWN (UNDER)&#34; on the back. As with these bar crawl shirts, most shirts have some sort of funny subliminal or double meaning related to the theme of their bar crawl. " class="fancybox hide"></a>  	
+			</div>
+			
+			<div class="box bucket-list">
+			<a href="assets/img/comboXchange/combophoto1.jpg" rel="gallery7" class="fancybox"><img src="assets/img/comboXchange/combothumbnail.jpg" alt="" /><h3>Combo-X-Change</h3>	</a> 
+				<a href="assets/img/placeholder.png" rel="gallery7" title="Combo-X-Change allows dining plan holders to use their meal passes at other places than the dining halls. You can use one combo-X-Change at Sparty's, Union Pizzeria, Union Deli, Serrano's and Riverwalk Market at Owen Hall, or the MSU Food Truck once per day Monday - Friday for resident students and multiple times for off-campus students, faculty and staff." class="fancybox hide"></a> 
+			</div>
+			
+			<div class="box spartan-pride">
+			<a href="assets/img/studentfarm/organicfarm6.jpg" rel="gallery8" title="Student Organic Farm" class="fancybox"><img src="assets/img/studentfarm/thumbnail.jpg" alt="" /><h3>Student Organic Farm</h3></a> 
+            	<a href="assets/img/studentfarm/organicfarm1.jpg" rel="gallery8" class="fancybox hide"></a> 
+				<a href="assets/img/studentfarm/organicfarm2.jpg" rel="gallery8" class="fancybox hide"></a> 
+				<a href="assets/img/studentfarm/organicfarm3.jpg" rel="gallery8" class="fancybox hide"></a> 
+				<a href="assets/img/studentfarm/organicfarm4.jpg" rel="gallery8" class="fancybox hide"></a>
+                <a href="assets/img/studentfarm/organicfarm5.jpg" rel="gallery8" class="fancybox hide"></a> 
+                 <a href="assets/img/placeholder.png" rel="gallery8" title="The Student Organic Farm is a student-initiated project. In 1999, a group of students wanted to have a place to apply some of the things they were learning in their classes on campus, to learn things they were not getting in classes, to farm organically and to get their hands dirty with some hands-on farming experience. At the same time, Horticulture Professor John Biernbaum began researching possibilities for 4-season farming in Michigan. The marriage of these two projects became inevitable.
+From the beginning, the aim of the farm was to provide a place where students could come and volunteer, work, visit, and have input on the development of the land and farm. As a result of the vision and hard work of many, the farm has flourished. Over the last 11 years the farm has developed into a place where many different groups are able to engage with growing food and creating learning opportunities through farming. 
+http://www.msuorganicfarm.com
+"  class="fancybox hide"></a>        	
+			</div>
+			
+			<div class="box people">
+			<a href="assets/img/henrybrimmer/hbfeature.jpg" rel="gallery9" title="Henry Brimmer" class="fancybox"><img src="assets/img/henrybrimmer/henrybrimmer_thumb.jpg" alt="" /><h3>Henry Brimmer</h3></a> 
+				<a href="assets/img/henrybrimmer/henrybrimmer.jpg" rel="gallery9" class="fancybox hide"></a> 
+				<a href="assets/img/henrybrimmer/henrybrimmer2.jpg" rel="gallery9" class="fancybox hide"></a> 
+				<a href="assets/img/henrybrimmer/henrybrimmer3.jpg" rel="gallery9" class="fancybox hide"></a>  
+                <a href="assets/img/henrybrimmer/henrybrimmer4.jpg" rel="gallery9" class="fancybox hide"></a> 	
+			</div>
+			
+			<div class="box spartan-pride">
+			<a href="assets/img/spartanstatue/feature.jpg" rel="gallery10" class="fancybox"><img src="assets/img/spartanstatue/thumb.jpg" alt="" /><h3>Spartan Statue</h3></a> 
+				<a href="assets/img/spartanstatue/IMG_1.jpg" rel="gallery10" class="fancybox hide"></a> 
+				<a href="assets/img/spartanstatue/IMG_2.jpg" rel="gallery10" class="fancybox hide"></a> 	
+                <a href="assets/img/spartanstatue/IMG_3.jpg" rel="gallery10" class="fancybox hide"></a> 
+                <a href="assets/img/spartanstatue/IMG_4.jpg" rel="gallery10" title="MSU a capella group Capital Green poses during one of their fall tailgate performances" class="fancybox hide"></a> 
+                <a href="assets/img/placeholder.png" rel="gallery10" title="The Spartan Statue, affectionately known as &#34;Sparty, &#34; stands on the Red Cedar River where Kalamazoo St. and Chestnut Rd. meet and was originally designed in 1945 by Leonard D. Jungwirth, at that time a professor of art at MSU. 
+
+Due to weather damages inflicted on the original terra cotta statue, in 2005 Sparty was moved indoors to the Spartan Football Stadium and was replaced with a bronze replica. Sparty currently stands 9'7 tall and weighs over 3,000 pounds.
+
+It is a tradition of MSU students to pose in front of Sparty with friends and family for major life events, such as graduation, tailgates or even weddings." class="fancybox hide"></a> 
+			</div>
+			
+			<div class="box social">
+			  <a class="fancybox fancybox" rel="gallery11" title="Chinese New Year" href="assets/img/chinese_newyear/chinese_newyears_img.jpg"><img src="assets/img/chinese_newyear/chinesenewyears_thumb.jpg" alt="" /> <h3>Chinese New Year</h3></a>
+			  <a href="assets/img/chinese_newyear/chinese_newyears_img2.jpg" rel="gallery11" class="fancybox hide"></a> 
+			  <a href="assets/img/chinese_newyear/chinese_newyears_img3.jpg" rel="gallery11" class="fancybox hide"></a>
+	    </div>
+			
+			<div class="box social">
+			<a class="fancybox fancybox" rel="gallery12" title="Harpers" href="assets/img/harpers/harpers_img1.png"><img src="assets/img/harpers/harpers_thumb.png" alt="" /><h3>Harpers</h3></a> 
+				<a href="assets/img/harpers/harpers_img2.png" rel="gallery12" class="fancybox hide"></a>  	
+			</div>
+			
+			<div class="box spartan-pride">
+			<a href="assets/img/therock/feature.jpg" rel="gallery13" title="The Rock" class="fancybox"><img src="assets/img/therock/TheRockThumbnail.jpg" alt="" /><h3>The Rock</h3>	</a> 
+				<a href="assets/img/therock/TheRock_1.JPG" rel="gallery13" title="Many student organizations, such as MSU Students Advancing International Development, paint the rock to advertise their message on campus. " class="fancybox hide"></a> 
+				<a href="assets/img/therock/TheRock_2.JPG" rel="gallery13" title=" Students will camp out all day to claim the rock until their group is ready to paint it after dark. " class="fancybox hide"></a> 
+				<a href="assets/img/therock/TheRock_3.JPG" rel="gallery13" title="Kappa Delta Sorority used the rock as the center of their Go Confidently Day event." class="fancybox hide"></a>
+                <a href="assets/img/therock/TheRock_4.JPG" rel="gallery13" title="Kappa Delta set up a table where students could sign a pledge to remain confident, and enjoy Insomnia cookies." class="fancybox hide"></a>
+                <a href="assets/img/therock/TheRock_5.JPG" rel="gallery13" title="Additionally, they passed out buttons and balloons as reminders of each persons pledge to stay confident." class="fancybox hide"></a>
+			</div>
+			
+			<div class="box social">
+
+			<a href="assets/img/peanutbarrel/pb_feature.png" rel="gallery14" title="Long Island Lovers" class="fancybox"><img src="assets/img/peanutbarrel/pb_thumb.png" alt="" /><h3>Peanut Barrel</h3></a> 
+            	<a href="assets/img/placeholder.png" rel="gallery14" title="The Peanut Barrel is an MSU favorite hangout known for its tasty burgers, chill atmosphere and of course famous Long Islands! Legend has it that one sip will removes an entire day of memories…haha just kidding but be warned because they are as strong as they are delicious!"  class="fancybox hide"></a> 
+                <a href="assets/img/peanutbarrel/pb_pic.png" rel="gallery14" title="Discover the secret of PB's legendary Long Islands"  class="fancybox hide"></a>
+				<a href="assets/img/peanutbarrel/pb_pic2.png" rel="gallery14" class="fancybox hide"></a> 
+				<a href="assets/img/peanutbarrel/pb_pic3.png" rel="gallery14" class="fancybox hide"></a> 
+				<a href="assets/img/peanutbarrel/pb_pic4.png" rel="gallery14" class="fancybox hide"></a>  
+                <a href="assets/img/peanutbarrel/pb_pic5.png" rel="gallery14" class="fancybox hide"></a>  
+			</div>
+			
+			<div class="box bucket-list">
+			<a href="assets/img/karaoke_at_crunchys/feature.jpg" rel="gallery15" title="Karaoke at Crunchy's" class="fancybox"><img src="assets/img/karaoke_at_crunchys/thumb.jpg" alt="" /><h3>Test</h3></a> 
+				<a href="assets/img/karaoke_at_crunchys/img-1.jpg" rel="gallery15" title="Karaoke night
+Every Thursday at 9:00pm.
+Everybody in East Lansing know about Karaoke night at Crunchy's. Enjoy great food and great selections of local beers. and of course, Karaoke with your friends is a ton of fun." class="fancybox hide"></a> 
+				<a href="assets/img/karaoke_at_crunchys/img-2.jpg" rel="gallery15" class="fancybox hide"></a> 	
+			</div>
+            
+            <div class="box people">
+
+			<a href="assets/img/johnnyspirit/js.jpg" rel="gallery21" title="Johnny Spirit" class="fancybox"><img src="assets/img/johnnyspirit/js_thumbnail.png" alt="" /><h3>Johnny Spirit</h3></a> 
+				<a href="assets/img/placeholder.png" rel="gallery21" title="His given name is John Sheldon. &#8220;Johnny Spirit&#8221; is such a Michigan State fanatic that there's a rumor he's legally changed his last name to &#8220;Spirit&#8221;. The MSU super fan started attending almost every school function as a Spartans student in 1993, painted green from head to toe. Seventeen years later, he's still going strong."  class="fancybox hide"></a> 	
+			</div>
+			
+			<div class="box bucket-list">
+			<a href="assets/img/zeke_wonderdog/feature.jpg" rel="gallery16" title="Meet Zeke The Wonder Dog" class="fancybox"><img src="assets/img/zeke_wonderdog/thumbnail.jpg" alt="" /><h3>Zeke The Wonder Dog</h3></a> 
+				<a href="assets/img/zeke_wonderdog/dturcotte_meetzeke_1.png" rel="gallery16" class="fancybox hide"></a> 
+				<a href="assets/img/zeke_wonderdog/dturcotte_meetzeke_2.png" rel="gallery16" class="fancybox hide"></a>	
+			</div>
+			
+			<div class="box spartan-pride">
+			<a href="assets/img/movies_at_wells/MoviesAtWells.jpg" rel="gallery17" class="fancybox"><img src="assets/img/movies_at_wells/wells_thumb.jpg" alt="" /><h3>Movies at Wells Hall</h3></a> 
+				<a href="assets/img/movies_at_wells/MoviesAtWells2.jpg" rel="gallery17" class="fancybox hide"></a> 
+				<a href="assets/img/movies_at_wells/MoviesAtWells3.jpg" rel="gallery17" class="fancybox hide"></a> 
+			</div>
+			
+				<div class="box social">
+			<a href="assets/img/rama/rama.png" rel="gallery18" title="Rama at the Riv" class="fancybox"><img src="assets/img/rama/rama_thumb.png" alt="" /><h3>Rama at the Riv</h3></a>	
+			</div>
+			
+			<div class="box bucket-list">
+			<a href="assets/img/dairystore/img1.png" rel="gallery19" class="fancybox"><img src="assets/img/dairystore/thumbnail.jpg" alt="" /><h3>MSU Dairy Store</h3></a> 
+				<a href="assets/img/dairystore/img2.png" rel="gallery19" class="fancybox hide"></a> 
+			</div>
+            
+            <div class="box social">
+			<a href="assets/img/grilledcheeseshark/GrilledCheese_Shark.jpg" rel="gallery20" title="Grilled Cheese at the Shark" class="fancybox"><img src="assets/img/grilledcheeseshark/GrilledCheese_Shark_Thumb.png" alt="" /><h3>Grilled Cheese at the Shark</h3></a>
+            	<a href="assets/img/grilledcheeseshark/GrilledCheese_Shark1.jpg" rel="gallery20" class="fancybox hide"></a> 
+            	<a href="assets/img/grilledcheeseshark/GrilledCheese_Shark2.jpg" rel="gallery20" class="fancybox hide"></a> 
+				<a href="assets/img/grilledcheeseshark/GrilledCheese_Shark3.jpg" rel="gallery20" class="fancybox hide"></a> 
+				<a href="assets/img/grilledcheeseshark/GrilledCheese_Shark4.jpg" rel="gallery20" class="fancybox hide"></a>	
+			</div>
+            <div class="box people">
+
+			<a href="assets/img/johnnyspirit/js.jpg" rel="gallery21" title="Johnny Spirit" class="fancybox"><img src="assets/img/johnnyspirit/js_thumbnail.png" alt="" /><h3>Johnny Spirit</h3></a> 
+				<a href="assets/img/placeholder.png" rel="gallery21" title="His given name is John Sheldon. &#8220;Johnny Spirit&#8221; is such a Michigan State fanatic that there's a rumor he's legally changed his last name to &#8220;Spirit&#8221;. The MSU super fan started attending almost every school function as a Spartans student in 1993, painted green from head to toe. Seventeen years later, he's still going strong."  class="fancybox hide"></a> 	
+			</div>
+            
+            <div class="box social">
+			<a href="assets/img/tuesdayriv/tuesdayriv.png" rel="gallery22" title="Tuesday at the Riv" class="fancybox"><img src="assets/img/tuesdayriv/tuesdayriv_thumb.jpg" alt="" /><h3>Tuesday at the Riv</h3></a>
+            	<a href="assets/img/tuesdayriv/tuesdayriv2.png" rel="gallery22" class="fancybox hide"></a> 
+			</div>
+             <div class="box bucket-list">
+			<a href="assets/img/ncaa_bracket/features.jpg" rel="gallery23" title="NCAA Bracket Pool 2013" class="fancybox"><img src="assets/img/ncaa_bracket/thumb.jpg" alt="" /><h3>NCAA Bracket Pool 2013</h3></a>
+            	<a href="assets/img/ncaa_bracket/Brackets_1.jpg" rel="gallery23" title="Every March excitement builds around the NCAA Basketball Tournament, also known as March Madness. Because of Coach Tom Izzo's  past tournament record, students often fill out brackets in hopes to see Michigan State make it to the Final Four." class="fancybox hide"></a> 
+                <a href="assets/img/ncaa_bracket/Brackets_2.jpg" rel="gallery23" title="Groups of friends gather together and make bracket pools with buy-ins of various amounts in hopes of winning big with their picks." class="fancybox hide"></a> 
+                <a href="assets/img/ncaa_bracket/Brackets_3.jpg" rel="gallery23" title="This year, many found their brackets busted by the upsets that occurred early in the tournament." class="fancybox hide"></a> 
+                <a href="assets/img/ncaa_bracket/Brackets_4.jpg" rel="gallery23" title="This pool, made by Kappa Delta Sorority , was won by Faith Krogulecki who picked Louisville as the winning team." class="fancybox hide"></a> 
+                <a href="assets/img/ncaa_bracket/Brackets_5.jpg" rel="gallery23" title="Although the Spartans were eliminated by Duke in the third round of the tournament, our rivals from Ann Arbor made it all the way to the Championship game. The University of Michigan lost to Louisville 82-76." class="fancybox hide"></a> 
+			</div>
+            <div class="box people">
+			<a href="assets/img/arielle_p/pietron_1.JPG" rel="gallery24" title="Senior chemistry major, Arielle Pietron was selected to represent the state of Michigan in the National Conference of State Societies Princess Program in Washington D.C." class="fancybox"><img src="assets/img/arielle_p/pietron_thumbnail.jpg" alt="" /><h3>Arielle Pietron</h3></a>
+            	<a href="assets/img/arielle_p/pietron_2.JPG" rel="gallery24" title="She has the opportunity to spend a week in Washington D.C. with representatives from all the U.S. states and territories doing community service, meeting with Congress and attending various other events held during the annual Cherry Blossom Festival." class="fancybox hide"></a> 
+                <a href="assets/img/arielle_p/pietron_3.JPG" rel="gallery24" title="At the end of the week, all the State Princesses attend a ball where they are require to wear white ball gowns, an ambassador from Japan spins a wheel to determine which state will be named the United States Cherry Blossom Queen." class="fancybox hide"></a> 
+                <a href="assets/img/arielle_p/pietron_4.jpg" rel="gallery24" title="Each state Princess gives out lapel pins to each other state that represent her home state's heritage. Arielle's pins are from Ford Motor Company and the Traverse City Cherry Festival." class="fancybox hide"></a> 
+			</div>	
+            
+             <div class="box spartan-pride">
+			<a href="assets/img/redcedarriver/redcedarriver_1.png" rel="gallery25" title ="Red Cedar River" class="fancybox"><img src="assets/img/redcedarriver/redcedarriver_thumbnail.jpg" alt="" /
+			><h3>Red Cedar River</h3></a> 
+            <a href="assets/img/redcedarriver/redcedarriver_2.jpg" rel="gallery25" title="Even in the winter, the Red Cedar is still a sight to see on campus. The wildlife hangs out all year round and, aesthetically; it is just as beautiful half frozen as it is in the heat of the summer." class="fancybox hide"></a> 
+            <a href="assets/img/redcedarriver/redcedarriver_3.jpg" rel="gallery25" class="fancybox hide"></a> 
+			</div>
+            
+          <div class="box social">
+			<a href="assets/img/rhm/rhm.png" rel="gallery26" title ="Residence Hall Movie Offices" class="fancybox"><img src="assets/img/rhm/rhm-thumbnail.png" alt="" /
+			><h3>Resident Hall Movie Rental</h3></a> 
+			</div>	
+            
+            <div class="box social">
+			<a href="assets/img/izzone/izzone_1.jpg" rel="gallery27" title ="Izzone!" class="fancybox"><img src="assets/img/izzone/izzone_thumbnail.jpg" alt="" /
+			><h3>Izzone</h3></a> 
+            <a href="assets/img/izzone/izzone_2.jpg" rel="gallery27" class="fancybox hide"></a> 
+            <a href="assets/img/izzone/izzone_3.jpg" rel="gallery27" class="fancybox hide"></a> 
+            <a href="assets/img/izzone/izzone_4.jpg" rel="gallery27" class="fancybox hide"></a> 
+            <a href="assets/img/izzone/izzone_5.jpg" rel="gallery27" class="fancybox hide"></a> 
+			</div>	
+            
+            <div class="box bucket-list">
+			<a href="assets/img/tailgating/tailgating_1.jpg" rel="gallery28" title ="" class="fancybox"><img src="assets/img/tailgating/tailgatingthumbnail.jpg" alt="" /
+			><h3>Tailgating!</h3></a> 
+			</div>	
+            
+            <div class="box people">
+			<a href="assets/img/john_a_hannah/IMG_1.jpg" rel="gallery29" title ="" class="fancybox"><img src="assets/img/john_a_hannah/thumb.jpg" alt="" /
+			><h3>John A. Hannah</h3></a> 
+            <a href="assets/img/john_a_hannah/IMG_2.JPG" rel="gallery29" class="fancybox hide"></a> 
+            <a href="assets/img/placeholder.png" rel="gallery29" title="John A. Hannah was the 12th president of Michigan State University and is currently most know on campus for the administration building, which is named after him. During his time as president (1941-1969), Hannah oversaw the growth of enrollment from 6,000 students to just under 40,000 and he is credited for turning a small state college into a renowned university." class="fancybox hide"></a> 
+			</div>	
+			
+			</div><!-- main -->
+			
+			<p id="back-top">
+				<a href="#top"><span><i class="icon-circle-arrow-up"></i></span></a>
+			</p>
+			
+            <script type="text/javascript">
+			jQuery(document).ready(function($){
+				/* prepend menu icon */
+				$('#nav-wrap').prepend('<div id="menu-button"><i class="icon-reorder"></i></div>');
+				
+				/* toggle nav */
+				$("#menu-button").on("click", function(){
+					$("#nav").slideToggle();
+					$(this).toggleClass("active");
+				});
+			});
+			</script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+        <script src="js/isotope.js"></script>
+		<script type="text/javascript">
+		$(window).load(function(){
+		$(document).ready(function(){
+				var $container = $('#content');
+		$container.isotope({
+			filter: '*',
+			animationOptions: {
+		     duration: 1200,
+		     easing: 'linear',
+		     queue: false,
+		   }
+		});
+		
+		
+		$('#nav a').click(function(){
+		  var selector = $(this).attr('data-filter');
+		    $container.isotope({ 
+			filter: selector,
+			animationOptions: {
+		     duration: 1200,
+		     easing: 'linear',
+		     queue: false,
+			 
+		   }
+		  });
+		  return false;
+		});
+		});
+		});
+		</script>      
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
