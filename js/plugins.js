@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	// hide #back-top first
 	$("#back-top").hide();
-	
+
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
@@ -41,17 +41,18 @@ $(document).ready(function(){
 
 $(document).ready(function () {
     $(".fancybox").fancybox({
-        type: "image",
- helpers : {
-  title : {
-   type : 'inside'
-  },
-  buttons : {},
-  thumbs : {
-   width : 50,
-   height : 50
-  }
- },
+	    type: "image",
+		helpers : {
+			title : {
+				   type : 'inside'
+				   },
+			buttons : {},
+			thumbs : {
+					width : 90,
+					height : 90
+					},
+            overlay : null
+		 },
  afterLoad : function() {
   this.title = '' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
  }

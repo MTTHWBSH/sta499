@@ -248,8 +248,10 @@
 	background: rgba(0, 0, 0, .8);
 }
 
+/* Broken out into separate file.
+
 #fancybox-thumbs {
-	position: relative; /* Changed for moving thumbs to wrapper. */
+	position: absolute;
 	left: 0;
 	width: 100%;
 	overflow: hidden;
@@ -274,7 +276,7 @@
 #fancybox-thumbs ul li {
 	float: left;
 	padding: 1px;
-	opacity: 0.8;
+	opacity: 1.0;
 }
 
 #fancybox-thumbs ul li.active {
@@ -294,6 +296,7 @@
 	border: 1px solid #222;
 	background: #111;
 	outline: none;
+	box-shadow: 0px 0px 20px black;
 }
 
 #fancybox-thumbs ul li img {
@@ -302,3 +305,4 @@
 	border: 0;
 	padding: 0;
 }
+*/
