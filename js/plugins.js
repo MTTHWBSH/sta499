@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	// hide #back-top first
 	$("#back-top").hide();
-	
+
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
@@ -48,8 +48,8 @@ $(document).ready(function () {
 				   },
 			buttons : {},
 			thumbs : {
-					width : 90,
-					height : 90
+					width : 75,
+					height : 75
 					},
             overlay : null
 		 },
