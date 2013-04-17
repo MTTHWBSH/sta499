@@ -14,12 +14,6 @@
  *     });
  *
  */
- 
- /* Modified by Josh to move thumbnails inside wrapper as per this thread:
-  * https://github.com/fancyapps/fancyBox/issues/52
-  * Changes on lines 65, 120, 152.
- */
- 
 (function ($) {
 	//Shortcut for fancyBox object
 	var F = $.fancybox;
@@ -27,8 +21,8 @@
 	//Add helper object
 	F.helpers.thumbs = {
 		defaults : {
-			width    : 25,       // thumbnail width
-			height   : 25,       // thumbnail height
+			width    : 50,       // thumbnail width
+			height   : 50,       // thumbnail height
 			position : 'bottom', // 'top' or 'bottom'
 			source   : function ( item ) {  // function to obtain the URL of the thumbnail image
 				var href;
@@ -63,7 +57,7 @@
 				list += '<li><a style="width:' + thumbWidth + 'px;height:' + thumbHeight + 'px;" href="javascript:jQuery.fancybox.jumpto(' + n + ');"></a></li>';
 			}
 
-			this.wrap = $('<div id="fancybox-thumbs"></div>').addClass(opts.position).appendTo('.fancybox-skin'); // Was originally set to append to body.
+			this.wrap = $('<div id="fancybox-thumbs"></div>').addClass(opts.position).appendTo('body');
 			this.list = $('<ul>' + list + '</ul>').appendTo(this.wrap);
 
 			//Load each thumbnail
@@ -117,14 +111,7 @@
 			//Set initial width
 			this.width = this.list.children().eq(0).outerWidth(true);
 
-			// this.list.width(this.width * (obj.group.length + 1)).css('left', Math.floor($(window).width() * 0.5 - ((this.width * (obj.group.length) * 0.5))));
-			this.list.width(this.width * (obj.group.length + 1)).css('left', Math.floor($("#fancybox-thumbs").width() * 0.5 - (obj.index * this.width + this.width * 0.5)));
-			
-			/* Instructions said to change first line to second, but it wasn't an exact match.
 			this.list.width(this.width * (obj.group.length + 1)).css('left', Math.floor($(window).width() * 0.5 - (obj.index * this.width + this.width * 0.5)));
-			this.list.width(this.width * (obj.group.length + 1)).css('left', Math.floor($("#fancybox-thumbs").width() * 0.5 - (obj.index * this.width + this.width * 0.5)));
-			*/
-
 		},
 
 		beforeLoad: function (opts, obj) {
@@ -150,15 +137,13 @@
 
 			//Set active element
 			this.list.children().removeClass('active').eq(obj.index).addClass('active');
-			
-			if (this.wrap) {this.wrap.appendTo('.fancybox-skin');} //Added code to embed thumbs in wrapper.
 		},
 
 		//Center list
 		onUpdate: function (opts, obj) {
 			if (this.list) {
 				this.list.stop(true).animate({
-					'left': Math.floor($(window).width() * 0.5 - (this.width * (obj.group.length) * 0.5))
+					'left': Math.floor($(window).width() * 0.5 - (obj.index * this.width + this.width * 0.5))
 				}, 150);
 			}
 		},

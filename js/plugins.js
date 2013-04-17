@@ -41,17 +41,17 @@ $(document).ready(function(){
 
 $(document).ready(function () {
     $(".fancybox").fancybox({
-        type: "image",
- helpers : {
-  title : {
-   type : 'inside'
-  },
-  buttons : {},
-  thumbs : {
-   width : 100,
-   height : 100
-  }
- },
+	    type: "image",
+		helpers : {
+			title : {
+				   type : 'inside'
+				   },
+			buttons : {},
+			thumbs : {
+					width : 90,
+					height : 90
+		  }
+		 },
  afterLoad : function() {
   this.title = '' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
  }
