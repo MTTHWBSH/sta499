@@ -50,7 +50,8 @@ $(document).ready(function () {
 			thumbs : {
 					width : 90,
 					height : 90
-		  }
+					},
+            overlay : null
 		 },
  afterLoad : function() {
   this.title = '' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
