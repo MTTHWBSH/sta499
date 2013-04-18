@@ -105,8 +105,8 @@ textarea {
 	margin: auto;
 	text-align: center;
 	opacity: .7;
-	background-color: rgba(0,0,0,0.7);
-	padding: 15px;
+	background-color: rgba(0,0,0,0.55);
+	padding: 15px 15px 30px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 5px black;
 	-moz-box-shadow: 0px 0px 5px black;
@@ -130,10 +130,10 @@ textarea {
 
 #home p	{
 	position: relative;
-	margin: 60px 0;
+	margin: 60px 0 30px 0;
 	font-size: 18px;
 	font-weight: 500;
-	padding: 30px 0;
+	padding: 30px 0px;
 	text-shadow: 2px 2px 3px black;
 	background: url("bg-top.png") no-repeat,url("bg-bottom.png") no-repeat 0px 100%;
 }
